@@ -1,0 +1,113 @@
+/* Contact.css */
+
+.contact-container {
+    max-width: 1200px; /* Limit the width for better readability */
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    color: #34495e; /* Dark text color */
+  }
+  
+  h2 {
+    font-size: 36px;
+    text-align: center;
+    color: #2980b9; /* Bright blue for the title */
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    background-color: #f9f9f9; /* Light gray background for the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for the form */
+    margin-bottom: 30px;
+  }
+  
+  form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #2980b9; /* Blue color for labels */
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  form input[type="text"],
+  form input[type="email"] {
+    height: 40px;
+  }
+  
+  form textarea {
+    height: 150px;
+    resize: vertical; /* Allow resizing of textarea */
+  }
+  
+  form button {
+    background-color: #3498db; /* Bright blue button */
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #2980b9; /* Darken button on hover */
+  }
+  
+  form button:focus {
+    outline: none;
+  }
+  
+  .contact-info {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .contact-info p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  iframe {
+    width: 100%;
+    max-width: 600px; /* Max width of the map */
+    height: 450px;
+    border: none;
+    margin: 30px auto;
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-container {
+      padding: 20px; /* Adjust padding for smaller screens */
+    }
+  
+    form {
+      padding: 15px;
+    }
+  
+    form input,
+    form textarea,
+    form button {
+      font-size: 14px; /* Smaller text for mobile */
+    }
+  
+    iframe {
+      width: 100%; /* Make map responsive */
+      height: 350px; /* Adjust map height for small screens */
+    }
+  }
+  

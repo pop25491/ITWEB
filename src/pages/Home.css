@@ -1,0 +1,120 @@
+/* Home.css */
+.home-container {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Prompt', sans-serif;
+  background: linear-gradient(to bottom, #f0f9ff, #cfd9df);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #0072ff;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+  color: #555;
+}
+
+/* Button Styles */
+.enroll-button {
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.enroll-button:hover {
+  background: linear-gradient(90deg, #ff8c00, #ffdd57);
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Activity Section */
+.activity-section {
+  margin-top: 40px;
+}
+
+.activity-section h3 {
+  font-size: 1.8rem;
+  color: #0072ff;
+  margin-bottom: 20px;
+}
+
+.activity-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.activity-images img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.activity-images img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Enrollment Section */
+.enrollment-section {
+  background: linear-gradient(135deg, #3498db, #9b59b6);
+  color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.enrollment-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.enrollment-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.enroll-button {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.enroll-button:hover {
+  background: #c0392b;
+  transform: scale(1.05);
+}
+
+/* General Body Styling */
+body {
+  background: #f4f4f4;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}

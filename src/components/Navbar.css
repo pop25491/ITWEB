@@ -1,0 +1,88 @@
+/* Navbar.css */
+nav {
+  background: linear-gradient(90deg, #00c6ff, #0072ff); /* Blue gradient */
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px; /* Rounded corners */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: box-shadow 0.3s ease;
+}
+
+nav:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+  position: relative;
+}
+
+nav ul li a {
+  font-family: 'Prompt', sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Hover effect for links */
+nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffdd57; /* Gold color */
+  transform: scale(1.1);
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background: #ffdd57; /* Gold underline */
+  border-radius: 2px;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+  width: 100%; /* Full underline on hover */
+}
+
+/* Active link effect */
+nav ul li a.active {
+  background: rgba(255, 255, 255, 0.3);
+  color: #ffdd57; /* Gold color for active link */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
